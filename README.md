@@ -80,13 +80,8 @@ Writing modular, nested queries where an inner statement passes its output matri
 
 ---
 
-## PostgreSQL Specific Enhancements
 
-While DataCamp builds core proficiencies in standard ANSI SQL, this repository contains practical extensions demonstrating Postgres-native capabilities:
-1.  **Extended Pattern Operators:** Replacing cumbersome wildcards with case-insensitive `ILIKE` and POSIX Regular Expressions (`~`, `~*`).
-2.  **Type Casting:** Clean casting mechanics using the Postgres-native `::` operator (e.g., `total_sales::NUMERIC`).
-3.  **Advanced Functions:** Utilizing `COALESCE()` for intelligent `NULL` handling and fallback values.
 
----
+
 
 ## 📂 Repository Structure
