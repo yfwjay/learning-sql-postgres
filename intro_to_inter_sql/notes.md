@@ -28,3 +28,14 @@
 * **Multi-Column Sorting:** Sequencing data hierarchically by primary and secondary attributes (e.g., `ORDER BY department ASC, salary DESC`).
 * **Row Limitation:** Restricting output size to optimize application performance and memory overhead.
     * *Standard/PostgreSQL:* Using `LIMIT n` and optional `OFFSET m` values.
+
+### 5. Relational Joins & Set Theory
+Combining discrete tables horizontally by mapping shared keys and intersection points.
+
+* **The Types of Joins:**
+    * `INNER JOIN`: Returns rows only when the join predicate matches in both tables.
+    * `LEFT JOIN` (Left Outer): Fetches all records from the left table and matching rows from the right; appends `NULL` values where no match exists.
+    * `RIGHT JOIN` (Right Outer): Fetches all records from the right table and matching rows from the left; appends `NULL` where data is missing.
+    * `FULL JOIN` (Full Outer): Returns all records when there is a match in either left or right table records, filling missing values with `NULL`.
+    * `CROSS JOIN`: Generates a Cartesian product, pairing every single row of the first table with every single row of the second.
+    * **Self Joins:** Joining a table to itself to evaluate hierarchical or sequential relationships within the same entity (e.g., matching employees to managers).
