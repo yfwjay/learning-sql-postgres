@@ -39,3 +39,12 @@ Combining discrete tables horizontally by mapping shared keys and intersection p
     * `FULL JOIN` (Full Outer): Returns all records when there is a match in either left or right table records, filling missing values with `NULL`.
     * `CROSS JOIN`: Generates a Cartesian product, pairing every single row of the first table with every single row of the second.
     * **Self Joins:** Joining a table to itself to evaluate hierarchical or sequential relationships within the same entity (e.g., matching employees to managers).
+
+### 6. Set Operators (Vertical Combinations):
+
+* **The different set Operations:**
+
+    * `UNION`: Combines result sets vertically, eliminating duplicate rows.
+    * `UNION ALL`: Combines result sets vertically while preserving all duplicate rows (faster execution due to no deduplication overhead).
+    * `INTERSECT`: Returns only distinct rows present in *both* query result sets.
+    * `EXCEPT` (*PostgreSQL*) / `MINUS`: Returns distinct rows from the first query that are entirely absent from the second query.
